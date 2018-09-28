@@ -206,75 +206,75 @@ N9 = [17.686, 22.846, 0
     19.997, 26.139, 0
     19.302, 28.572, 0];
 
-if DrawOldLetter==true
-    Q = bezierCurve(P1, n); bezierCurvePlot(P1, Q, styleP, styleQ); 
-    Q = bezierCurve(P2, n); bezierCurvePlot(P2, Q, styleP, styleQ);
-    Q = bezierCurve(P3, n); bezierCurvePlot(P3, Q, styleP, styleQ);
-    Q = bezierCurve(P4, n); bezierCurvePlot(P4, Q, styleP, styleQ);
-    Q = bezierCurve(P5, n); bezierCurvePlot(P5, Q, styleP, styleQ); 
-    Q = bezierCurve(P6, n); bezierCurvePlot(P6, Q, styleP, styleQ);
-    Q = bezierCurve(P7, n); bezierCurvePlot(P7, Q, styleP, styleQ);
-    Q = bezierCurve(P8, n); bezierCurvePlot(P8, Q, styleP, styleQ);
-    Q = bezierCurve(P9, n); bezierCurvePlot(P9, Q, styleP, styleQ);
-    Q = bezierCurve(P10, n); bezierCurvePlot(P10, Q, styleP, styleQ);
-    Q = bezierCurve(P11, n); bezierCurvePlot(P11, Q, styleP, styleQ);
-    Q = bezierCurve(P12, n); bezierCurvePlot(P12, Q, styleP, styleQ);
-    Q = bezierCurve(P13, n); bezierCurvePlot(P13, Q, styleP, styleQ);
-    Q = bezierCurve(P14, n); bezierCurvePlot(P14, Q, styleP, styleQ);
-    Q = bezierCurve(P15, n); bezierCurvePlot(P15, Q, styleP, styleQ);
-    Q = bezierCurve(P16, n); bezierCurvePlot(P16, Q, styleP, styleQ);
-    Q = bezierCurve(P17, n); bezierCurvePlot(P17, Q, styleP, styleQ);
-    Q = bezierCurve(P18, n); bezierCurvePlot(P18, Q, styleP, styleQ);
-    Q = bezierCurve(P19, n); bezierCurvePlot(P19, Q, styleP, styleQ);
-    Q = bezierCurve(P20, n); bezierCurvePlot(P20, Q, styleP, styleQ);
-    Q = bezierCurve(P21, n); bezierCurvePlot(P21, Q, styleP, styleQ);
-    Q = bezierCurve(P22, n); bezierCurvePlot(P22, Q, styleP, styleQ);
-    Q = bezierCurve(P23, n); bezierCurvePlot(P23, Q, styleP, styleQ);
+% if DrawOldLetter==true
+%     Q = bezierCurve(P1, n); bezierCurvePlot(P1, Q, styleP, styleQ); 
+%     Q = bezierCurve(P2, n); bezierCurvePlot(P2, Q, styleP, styleQ);
+%     Q = bezierCurve(P3, n); bezierCurvePlot(P3, Q, styleP, styleQ);
+%     Q = bezierCurve(P4, n); bezierCurvePlot(P4, Q, styleP, styleQ);
+%     Q = bezierCurve(P5, n); bezierCurvePlot(P5, Q, styleP, styleQ); 
+%     Q = bezierCurve(P6, n); bezierCurvePlot(P6, Q, styleP, styleQ);
+%     Q = bezierCurve(P7, n); bezierCurvePlot(P7, Q, styleP, styleQ);
+%     Q = bezierCurve(P8, n); bezierCurvePlot(P8, Q, styleP, styleQ);
+%     Q = bezierCurve(P9, n); bezierCurvePlot(P9, Q, styleP, styleQ);
+%     Q = bezierCurve(P10, n); bezierCurvePlot(P10, Q, styleP, styleQ);
+%     Q = bezierCurve(P11, n); bezierCurvePlot(P11, Q, styleP, styleQ);
+%     Q = bezierCurve(P12, n); bezierCurvePlot(P12, Q, styleP, styleQ);
+%     Q = bezierCurve(P13, n); bezierCurvePlot(P13, Q, styleP, styleQ);
+%     Q = bezierCurve(P14, n); bezierCurvePlot(P14, Q, styleP, styleQ);
+%     Q = bezierCurve(P15, n); bezierCurvePlot(P15, Q, styleP, styleQ);
+%     Q = bezierCurve(P16, n); bezierCurvePlot(P16, Q, styleP, styleQ);
+%     Q = bezierCurve(P17, n); bezierCurvePlot(P17, Q, styleP, styleQ);
+%     Q = bezierCurve(P18, n); bezierCurvePlot(P18, Q, styleP, styleQ);
+%     Q = bezierCurve(P19, n); bezierCurvePlot(P19, Q, styleP, styleQ);
+%     Q = bezierCurve(P20, n); bezierCurvePlot(P20, Q, styleP, styleQ);
+%     Q = bezierCurve(P21, n); bezierCurvePlot(P21, Q, styleP, styleQ);
+%     Q = bezierCurve(P22, n); bezierCurvePlot(P22, Q, styleP, styleQ);
+%     Q = bezierCurve(P23, n); bezierCurvePlot(P23, Q, styleP, styleQ);
+% 
+%     Q = bezierCurve(M1, n); bezierCurvePlot(M1, Q, styleP, styleQ); 
+%     Q = bezierCurve(M2, n); bezierCurvePlot(M2, Q, styleP, styleQ);
+%     Q = bezierCurve(M3, n); bezierCurvePlot(M3, Q, styleP, styleQ);
+%     Q = bezierCurve(M4, n); bezierCurvePlot(M4, Q, styleP, styleQ);
+%     Q = bezierCurve(M5, n); bezierCurvePlot(M5, Q, styleP, styleQ); 
+%     Q = bezierCurve(M6, n); bezierCurvePlot(M6, Q, styleP, styleQ);
+%     Q = bezierCurve(M7, n); bezierCurvePlot(M7, Q, styleP, styleQ);
+%     
+%     Q = bezierCurve(N1, n); bezierCurvePlot(N1, Q, styleP, styleQ);  
+%     Q = bezierCurve(N2, n); bezierCurvePlot(N2, Q, styleP, styleQ);
+%     Q = bezierCurve(N3, n); bezierCurvePlot(N3, Q, styleP, styleQ);
+%     Q = bezierCurve(N4, n); bezierCurvePlot(N4, Q, styleP, styleQ);
+%     Q = bezierCurve(N5, n); bezierCurvePlot(N5, Q, styleP, styleQ); 
+%     Q = bezierCurve(N6, n); bezierCurvePlot(N6, Q, styleP, styleQ);
+%     Q = bezierCurve(N7, n); bezierCurvePlot(N7, Q, styleP, styleQ);
+%     Q = bezierCurve(N8, n); bezierCurvePlot(N8, Q, styleP, styleQ);
+%     Q = bezierCurve(N9, n); bezierCurvePlot(N9, Q, styleP, styleQ);
+%     
+%     Q = bezierCurve(B1, n); bezierCurvePlot(B1, Q, styleP, styleQ); 
+%     Q = bezierCurve(B2, n); bezierCurvePlot(B2, Q, styleP, styleQ);
+%     Q = bezierCurve(B3, n); bezierCurvePlot(B3, Q, styleP, styleQ);
+%     Q = bezierCurve(B4, n); bezierCurvePlot(B4, Q, styleP, styleQ);
+%     Q = bezierCurve(B5, n); bezierCurvePlot(B5, Q, styleP, styleQ); 
+%     Q = bezierCurve(B6, n); bezierCurvePlot(B6, Q, styleP, styleQ);
+%     Q = bezierCurve(B7, n); bezierCurvePlot(B7, Q, styleP, styleQ);
+%     Q = bezierCurve(B8, n); bezierCurvePlot(B8, Q, styleP, styleQ);
+%     Q = bezierCurve(B9, n); bezierCurvePlot(B9, Q, styleP, styleQ);
+%     Q = bezierCurve(B10, n); bezierCurvePlot(B10, Q, styleP, styleQ); 
+%     Q = bezierCurve(B11, n); bezierCurvePlot(B11, Q, styleP, styleQ); 
+%     Q = bezierCurve(B12, n); bezierCurvePlot(B12, Q, styleP, styleQ);
+%     Q = bezierCurve(B13, n); bezierCurvePlot(B13, Q, styleP, styleQ);
+%     Q = bezierCurve(B14, n); bezierCurvePlot(B14, Q, styleP, styleQ);
+%     Q = bezierCurve(B15, n); bezierCurvePlot(B15, Q, styleP, styleQ); 
+%     Q = bezierCurve(B16, n); bezierCurvePlot(B16, Q, styleP, styleQ);
+%     Q = bezierCurve(B17, n); bezierCurvePlot(B17, Q, styleP, styleQ);
+%     Q = bezierCurve(B18, n); bezierCurvePlot(B18, Q, styleP, styleQ);
+%     Q = bezierCurve(B19, n); bezierCurvePlot(B19, Q, styleP, styleQ);
+%    
+% end
 
-    Q = bezierCurve(M1, n); bezierCurvePlot(M1, Q, styleP, styleQ); 
-    Q = bezierCurve(M2, n); bezierCurvePlot(M2, Q, styleP, styleQ);
-    Q = bezierCurve(M3, n); bezierCurvePlot(M3, Q, styleP, styleQ);
-    Q = bezierCurve(M4, n); bezierCurvePlot(M4, Q, styleP, styleQ);
-    Q = bezierCurve(M5, n); bezierCurvePlot(M5, Q, styleP, styleQ); 
-    Q = bezierCurve(M6, n); bezierCurvePlot(M6, Q, styleP, styleQ);
-    Q = bezierCurve(M7, n); bezierCurvePlot(M7, Q, styleP, styleQ);
-    
-    Q = bezierCurve(N1, n); bezierCurvePlot(M1, Q, styleP, styleQ);  
-    Q = bezierCurve(N2, n); bezierCurvePlot(M2, Q, styleP, styleQ);
-    Q = bezierCurve(N3, n); bezierCurvePlot(M3, Q, styleP, styleQ);
-    Q = bezierCurve(N4, n); bezierCurvePlot(M4, Q, styleP, styleQ);
-    Q = bezierCurve(N5, n); bezierCurvePlot(M5, Q, styleP, styleQ); 
-    Q = bezierCurve(N6, n); bezierCurvePlot(6, Q, styleP, styleQ);
-    Q = bezierCurve(N7, n); bezierCurvePlot(N7, Q, styleP, styleQ);
-    Q = bezierCurve(N8, n); bezierCurvePlot(N8, Q, styleP, styleQ);
-    Q = bezierCurve(N9, n); bezierCurvePlot(N9, Q, styleP, styleQ);
-    
-    Q = bezierCurve(B1, n); bezierCurvePlot(B1, Q, styleP, styleQ); 
-    Q = bezierCurve(B2, n); bezierCurvePlot(B2, Q, styleP, styleQ);
-    Q = bezierCurve(B3, n); bezierCurvePlot(B3, Q, styleP, styleQ);
-    Q = bezierCurve(B4, n); bezierCurvePlot(B4, Q, styleP, styleQ);
-    Q = bezierCurve(B5, n); bezierCurvePlot(B5, Q, styleP, styleQ); 
-    Q = bezierCurve(B6, n); bezierCurvePlot(B6, Q, styleP, styleQ);
-    Q = bezierCurve(B7, n); bezierCurvePlot(B7, Q, styleP, styleQ);
-    Q = bezierCurve(B8, n); bezierCurvePlot(B8, Q, styleP, styleQ);
-    Q = bezierCurve(B9, n); bezierCurvePlot(B9, Q, styleP, styleQ);
-    Q = bezierCurve(B10, n); bezierCurvePlot(B10, Q, styleP, styleQ); 
-    Q = bezierCurve(B11, n); bezierCurvePlot(B11, Q, styleP, styleQ); 
-    Q = bezierCurve(B12, n); bezierCurvePlot(B12, Q, styleP, styleQ);
-    Q = bezierCurve(B13, n); bezierCurvePlot(B13, Q, styleP, styleQ);
-    Q = bezierCurve(B14, n); bezierCurvePlot(B14, Q, styleP, styleQ);
-    Q = bezierCurve(B15, n); bezierCurvePlot(B15, Q, styleP, styleQ); 
-    Q = bezierCurve(B16, n); bezierCurvePlot(B16, Q, styleP, styleQ);
-    Q = bezierCurve(B17, n); bezierCurvePlot(B17, Q, styleP, styleQ);
-    Q = bezierCurve(B18, n); bezierCurvePlot(B18, Q, styleP, styleQ);
-    Q = bezierCurve(B19, n); bezierCurvePlot(B19, Q, styleP, styleQ);
-   
-end
-
-% shear transformation
-T = [2 2 0
-     0 2 0
-     0 0 1];
+%shear transformation
+T = [1 1 0
+     0 1 0
+     0 0 0];
 nP1 = P1*T';
 nP2 = P2*T';
 nP3 = P3*T';
@@ -284,6 +284,21 @@ nP6 = P6*T';
 nP7 = P7*T';
 nP8 = P8*T';
 nP9 = P9*T';
+nP10 = P10*T';
+nP11 = P11*T';
+nP12 = P12*T';
+nP13 = P13*T';
+nP14 = P14*T';
+nP15 = P15*T';
+nP16 = P16*T';
+nP17 = P17*T';
+nP18 = P18*T';
+nP19 = P19*T';
+nP20 = P20*T';
+nP21 = P21*T';
+nP22 = P22*T';
+nP23 = P23*T';
+
 
 nM1 = M1*T';
 nM2 = M2*T';
@@ -292,8 +307,16 @@ nM4 = M4*T';
 nM5 = M5*T';
 nM6 = M6*T';
 nM7 = M7*T';
-nM8 = M8*T';
-nM9 = M9*T';
+
+nN1 = N1*T';
+nN2 = N2*T';
+nN3 = N3*T';
+nN4 = N4*T';
+nN5 = N5*T';
+nN6 = N6*T';
+nN7 = N7*T';
+nN8 = N8*T';
+nN9 = N9*T';
 
 nB1 = B1*T';
 nB2 = B2*T';
@@ -314,8 +337,6 @@ nB16 = B16*T';
 nB17 = B17*T';
 nB18 = B18*T';
 nB19 = B19*T';
-nB20 = B20*T';
-nB21 = B21*T';
 
 if DrawNewLetter == true
     Q = bezierCurve(nP1, n); bezierCurvePlot(nP1, Q, stylenP, stylenQ); 
@@ -327,8 +348,22 @@ if DrawNewLetter == true
     Q = bezierCurve(nP7, n); bezierCurvePlot(nP7, Q, stylenP, stylenQ);
     Q = bezierCurve(nP8, n); bezierCurvePlot(nP8, Q, stylenP, stylenQ);
     Q = bezierCurve(nP9, n); bezierCurvePlot(nP9, Q, stylenP, stylenQ);
-
-
+    Q = bezierCurve(nP10, n); bezierCurvePlot(nP10, Q, stylenP, stylenQ);
+    Q = bezierCurve(nP11, n); bezierCurvePlot(nP11, Q, stylenP, stylenQ);
+    Q = bezierCurve(nP12, n); bezierCurvePlot(nP12, Q, stylenP, stylenQ);
+    Q = bezierCurve(nP13, n); bezierCurvePlot(nP13, Q, stylenP, stylenQ);
+    Q = bezierCurve(nP14, n); bezierCurvePlot(nP14, Q, stylenP, stylenQ);
+    Q = bezierCurve(nP15, n); bezierCurvePlot(nP15, Q, stylenP, stylenQ); 
+    Q = bezierCurve(nP16, n); bezierCurvePlot(nP16, Q, stylenP, stylenQ);
+    Q = bezierCurve(nP17, n); bezierCurvePlot(nP17, Q, stylenP, stylenQ);
+    Q = bezierCurve(nP18, n); bezierCurvePlot(nP18, Q, stylenP, stylenQ);
+    Q = bezierCurve(nP19, n); bezierCurvePlot(nP19, Q, stylenP, stylenQ);
+    Q = bezierCurve(nP20, n); bezierCurvePlot(nP20, Q, stylenP, stylenQ);
+    Q = bezierCurve(nP21, n); bezierCurvePlot(nP21, Q, stylenP, stylenQ);
+    Q = bezierCurve(nP22, n); bezierCurvePlot(nP22, Q, stylenP, stylenQ);
+    Q = bezierCurve(nP23, n); bezierCurvePlot(nP23, Q, stylenP, stylenQ);
+    
+    
     Q = bezierCurve(nM1, n); bezierCurvePlot(nM1, Q, stylenP, stylenQ); 
     Q = bezierCurve(nM2, n); bezierCurvePlot(nM2, Q, stylenP, stylenQ);
     Q = bezierCurve(nM3, n); bezierCurvePlot(nM3, Q, stylenP, stylenQ);
@@ -336,8 +371,16 @@ if DrawNewLetter == true
     Q = bezierCurve(nM5, n); bezierCurvePlot(nM5, Q, stylenP, stylenQ); 
     Q = bezierCurve(nM6, n); bezierCurvePlot(nM6, Q, stylenP, stylenQ);
     Q = bezierCurve(nM7, n); bezierCurvePlot(nM7, Q, stylenP, stylenQ);
-    Q = bezierCurve(nM8, n); bezierCurvePlot(nM8, Q, stylenP, stylenQ);
-    Q = bezierCurve(nM9, n); bezierCurvePlot(nM9, Q, stylenP, stylenQ);
+    
+    Q = bezierCurve(nN1, n); bezierCurvePlot(nN1, Q, stylenP, stylenQ); 
+    Q = bezierCurve(nN2, n); bezierCurvePlot(nN2, Q, stylenP, stylenQ);
+    Q = bezierCurve(nN3, n); bezierCurvePlot(nN3, Q, stylenP, stylenQ);
+    Q = bezierCurve(nN4, n); bezierCurvePlot(nN4, Q, stylenP, stylenQ);
+    Q = bezierCurve(nN5, n); bezierCurvePlot(nN5, Q, stylenP, stylenQ); 
+    Q = bezierCurve(nN6, n); bezierCurvePlot(nN6, Q, stylenP, stylenQ);
+    Q = bezierCurve(nN7, n); bezierCurvePlot(nN7, Q, stylenP, stylenQ);
+    Q = bezierCurve(nN8, n); bezierCurvePlot(nN8, Q, stylenP, stylenQ);
+    Q = bezierCurve(nN9, n); bezierCurvePlot(nN9, Q, stylenP, stylenQ);
 
 
     Q = bezierCurve(nB1, n); bezierCurvePlot(nB1, Q, stylenP, stylenQ); 
@@ -359,8 +402,7 @@ if DrawNewLetter == true
     Q = bezierCurve(nB17, n); bezierCurvePlot(nB17, Q, stylenP, stylenQ);
     Q = bezierCurve(nB18, n); bezierCurvePlot(nB18, Q, stylenP, stylenQ);
     Q = bezierCurve(nB19, n); bezierCurvePlot(nB19, Q, stylenP, stylenQ);
-    Q = bezierCurve(nB20, n); bezierCurvePlot(nB20, Q, stylenP, stylenQ); 
-    Q = bezierCurve(nB21, n); bezierCurvePlot(nB21, Q, stylenP, stylenQ); 
+     
 end
     
 set(gca,'FontSize',20)    
@@ -369,7 +411,7 @@ xlabel('x','FontSize',20);
 ylabel('y','FontSize',20);
 zlabel('z','FontSize',20);
 
-%grid on;
+grid on;
 axis equal
 axis on
-%saveTightFigure(h, 'letterBs.pdf')
+saveTightFigure(h, 'letterBs.pdf')

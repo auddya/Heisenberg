@@ -1,6 +1,4 @@
 clear all, close all;
-
-
 hold off;
 axis([-30 30 -30 30])
 
