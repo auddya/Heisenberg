@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="generator" content="MATLAB R2017b"><meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,chrome=1"><title>ME 535 Assignment 3, Fall 2018</title><style type="text/css">
+* {margin: 0; padding: 0;}
+body {text-align: start; line-height: 17.234001159668px; min-height: 0px; white-space: normal; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-style: normal; font-size: 14px; font-weight: normal; text-decoration: none; white-space: normal; }
+h1, h2 {font-weight: normal;}
+.content { padding: 30px; }
+
+.S0 { margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S1 { text-align: left; line-height: 26.3999996185303px; min-height: 24px; white-space: pre-wrap; color: rgb(213, 80, 0); font-family: Helvetica, Arial, sans-serif; font-size: 22px; white-space: pre-wrap; margin-left: 4px; margin-top: 3px; margin-bottom: 15px; margin-right: 10px;  }
+.S2 { min-height: 0px; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S3 { text-align: left; line-height: 26.3999996185303px; min-height: 24px; white-space: pre-wrap; color: rgb(213, 80, 0); font-family: Helvetica, Arial, sans-serif; font-size: 22px; white-space: pre-wrap; margin-left: 4px; margin-top: 10px; margin-bottom: 15px; margin-right: 10px;  }
+.S4 { text-align: left; line-height: 21px; min-height: 17px; white-space: pre-wrap; font-family: Helvetica, Arial, sans-serif; white-space: pre-wrap; margin-left: 4px; margin-top: 2px; margin-bottom: 9px; margin-right: 10px;  }
+.S5 { font-weight: bold; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S6 { margin-left: 3px; margin-top: 10px; margin-bottom: 10px; margin-right: 3px;  }
+.S7 { min-height: 18px; white-space: nowrap; white-space: nowrap; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S8 { min-height: 0px; white-space: pre; white-space: pre; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 45px;  }
+.S9 { color: rgb(34, 139, 34); margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S10 { color: rgb(160, 32, 240); margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S11 { color: rgb(0, 0, 255); margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S12 { color: rgb(64, 64, 64); margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S13 { text-align: left; line-height: 21px; min-height: 17px; white-space: pre-wrap; font-family: Helvetica, Arial, sans-serif; white-space: pre-wrap; margin-left: 4px; margin-top: 10px; margin-bottom: 9px; margin-right: 10px;  }
+.S14 { margin-left: 3px; margin-top: 10px; margin-bottom: 4px; margin-right: 3px;  }
+
+.CodeBlock {margin: 10px 0 10px 0; background-color: #F7F7F7;}
+.CodeBlock+.paragraphNode {margin-top: 10px;}
+.lineNode {padding-left: 10px; border-left: 1px solid #E9E9E9; border-right: 1px solid #E9E9E9;}
+.inlineWrapper:first-child .lineNode,.inlineWrapper.outputs+.inlineWrapper .lineNode {padding-top: 5px; border-top: 1px solid #E9E9E9;}
+.inlineWrapper:last-child .lineNode,.inlineWrapper.outputs .lineNode {padding-bottom: 5px; border-bottom: 1px solid #E9E9E9;}
+.lineNode .textBox {white-space: pre;}
+.outputGroup {margin: 2px 0 2px 0; padding: 2px 2px 2px 4px;}
+.outputRegion {}
+.outputParagraph {color: rgba(64, 64, 64, 1); padding: 10px 0 6px 17px; background: white; overflow-x: hidden;}
+.inlineWrapper:last-child .outputParagraph {border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;}
+.outputParagraph:empty {margin: 0;}
+.inlineElement .symbolicElement {margin-top: 1px; margin-bottom: 1px;}
+.embeddedOutputsSymbolicElement .MathEquation {margin-top: 4px; margin-bottom: 4px;}
+.embeddedOutputsSymbolicElement .MathEquation.displaySymbolicElement {margin-left: 15px;}
+.embeddedOutputsSymbolicElement .MathEquation.inlineSymbolicElement {}
+.embeddedOutputsSymbolicElement {overflow-x: auto; overflow-y: auto;}
+.embeddedOutputsSymbolicElement { overflow: initial !important;}
+.embeddedOutputsTextElement,.embeddedOutputsVariableStringElement {white-space: pre; word-wrap: initial; min-height: 18px; max-height: 250px; overflow: auto;}
+.textElement,.rtcDataTipElement .textElement {padding-top: 3px;}
+.embeddedOutputsTextElement.inlineElement,.embeddedOutputsVariableStringElement.inlineElement {}
+.inlineElement .textElement {}
+.embeddedOutputsTextElement,.embeddedOutputsVariableStringElement { max-height: none !important; overflow: initial !important;}
+.veSpecifier {}
+.veContainer {}
+.veSpecifierBox {height: 400px; width: 500px;}
+.veSpecifier .veTable {padding-top: 3px; padding-bottom: 4px;}
+.veSpecifierBox .veSpecifier .veContainer {position: relative; width: 100%; height: 370px;}
+.veSpecifierBox .dijitDialogPaneContent {width: 97% !important; height: 88% !important;}
+.veSpecifier .veTable .rowHeadersWrapper {padding-bottom: 0;}
+.veSpecifier .veTable .scroller .variableEditorRenderers {padding-right: 3px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;}
+.veSpecifier .veTable .topHeaderWrapper,.veSpecifier .veTable .bottomRowHeaderWrapper {visibility: hidden; z-index: 0;}
+.veMetaSummary {font-style: italic;}
+.veSpecifier .veTable .scroller {overflow: hidden;}
+.veSpecifier .veTable:hover .scroller {overflow: auto;}
+.veSpecifier .veVariableName,.veSpecifier .veDimensionFont {font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 12px;}
+.veSpecifier .veVariableName {padding-top: 2px;}
+.veSpecifier .veDimensionFont {font-style: italic; color: #9A9A9A;}
+.veSpecifier .scroller::-webkit-scrollbar-track {background-color: white;}
+.veSpecifier .scroller::-webkit-scrollbar-corner {background-color: white;}
+.veSpecifier .veTable .topRowHeaderWrapper {border: none; background-color: #F8F9FA;}
+.veSpecifier .mw_type_ListBase.showCellBorders,.veSpecifier .veTable .topHeaderWrapper,.veSpecifier .veTable .bottomRowHeaderWrapper,.veSpecifier .veTable .verticalScrollSpacer,.veSpecifier .veTable .horizontalScrollSpacer {border: none;}
+.veSpecifier .veTable .dataScrollerNode {border: 1px solid #BFBFBF;}
+.veSpecifier .veTable .columnHeaderNode,.veSpecifier .veTable .rowHeaderNode,.veSpecifier .veTable .dataBody {font-family: Arial; font-size: 13px;}
+.veSpecifier .veTable .columnHeaderNode,.veSpecifier .veTable .rowHeaderNode {color: #7F7F7F;}
+.veSpecifier .veTable .dataBody {color: #000000;}
+.veSpecifier .veTable .columnHeaderNode .cell .drag,.veSpecifier .veTable .columnHeaderNode .cell .header,.veSpecifier .veTable .topHeaderWrapper,.veSpecifier .veTable .bottomRowHeaderWrapper {background-color: #F8F9FA;}
+.veSpecifier .veTable .columnHeaderNode .cell .dragBorder {border-right: 1px solid #F8F9FA;}
+.veSpecifier .veTable .rowHeaderNode .cell {padding-top: 3px; text-align: center; border-bottom: 1px solid #F8F9FA;}
+.veSpecifier .veTable .dataBody .cell .plainText {text-align: right;}
+.veSpecifier .veTable .dataBody .row .cell {border-bottom: 1px solid #E9E9E9; border-right: 1px solid #E9E9E9;}
+.embeddedOutputsVariableElement {white-space: pre-wrap; word-wrap: break-word; min-height: 18px; max-height: 250px; overflow: auto;}
+.variableElement {}
+.embeddedOutputsVariableElement.inlineElement {}
+.inlineElement .variableElement {}
+.variableNameElement {margin-bottom: 3px; display: inline-block;}
+.variableValue { width: 100% !important; }
+.embeddedOutputsMatrixElement {min-height: 18px; box-sizing: border-box;}
+.embeddedOutputsMatrixElement .matrixElement,.rtcDataTipElement .matrixElement {position: relative;}
+.matrixElement .variableValue,.rtcDataTipElement .matrixElement .variableValue {white-space: pre; display: inline-block; vertical-align: top; overflow: hidden;}
+.embeddedOutputsMatrixElement.inlineElement {}
+.embeddedOutputsMatrixElement.inlineElement .topHeaderWrapper {display: none;}
+.embeddedOutputsMatrixElement.inlineElement .veTable .body {padding-top: 0 !important; max-height: 100px;}
+.inlineElement .matrixElement {max-height: 300px;}
+.embeddedOutputsMatrixElement .matrixElement .valueContainer,.rtcDataTipElement .matrixElement .valueContainer {white-space: nowrap; margin-bottom: 3px;}
+.embeddedOutputsMatrixElement .matrixElement .valueContainer .horizontalEllipsis.hide,.embeddedOutputsMatrixElement .matrixElement .verticalEllipsis.hide,.rtcDataTipElement .matrixElement .valueContainer .horizontalEllipsis.hide,.rtcDataTipElement .matrixElement .verticalEllipsis.hide {display: none;}
+.embeddedOutputsMatrixElement .matrixElement .valueContainer .horizontalEllipsis {margin-bottom: -3px;}
+.matrixElement { max-height: none !important; }
+.embeddedOutputsVariableTableElement .ClientViewDiv table tr {height: 22px; white-space: nowrap;}
+.embeddedOutputsVariableTableElement .ClientViewDiv table thead tr th {border-width: 1px 0px 1px 1px;}
+.embeddedOutputsVariableTableElement .ClientViewDiv table {border-spacing: 0px; border: 1px solid #bfbfbf; border-width: 0px 1px 0px 0px;}
+.embeddedOutputsVariableTableElement .ClientViewDiv table tr td,.embeddedOutputsVariableTableElement .ClientViewDiv table tr th {min-width : 75px; max-width : 75px; background-color:white; border: 1px solid #bfbfbf; text-overflow: ellipsis; border-width: 0px 0px 1px 1px; font-family: 'Arial', sans-serif; font-size: 12px; overflow : hidden;}
+.embeddedOutputsVariableTableElement .ClientViewDiv table tbody tr th {width: 34px; max-width: 100px;}
+.embeddedOutputsVariableTableElement .ClientViewDiv table tr span {text-overflow: ellipsis; padding: 3px;}
+.embeddedOutputsVariableTableElement .ClientViewDiv table tr th {background: #f5f5f5; color: rgba(0,0,0,0.5); padding: 3px; font-size: 9px;}
+.embeddedOutputsVariableTableElement .ClientViewDiv table tr th:first-child {min-width: 28px; max-width: 250px;}
+.dijitTooltipDialog .dijitTooltipContainer .dijitTooltipContents .alertPlugin-alertMessage {min-width: 12px; max-width: 400px; max-height: 300px; overflow: auto;}
+.dijitTooltipDialog .alertPlugin-alertMessage::-webkit-scrollbar {width: 11px; height: 11px;}
+.dijitTooltipDialog .alertPlugin-alertMessage::-webkit-scrollbar-track {background-color: rgba(0, 0, 0, 0);}
+.dijitTooltipDialog .alertPlugin-alertMessage::-webkit-scrollbar-corner {background-color: rgba(0, 0, 0, 0);}
+.dijitTooltipDialog .alertPlugin-alertMessage::-webkit-scrollbar-thumb {border-radius: 7px; background-color: rgba(0, 0, 0, 0.1); border: 2px solid rgba(0, 0, 0, 0); background-clip: padding-box;}
+.dijitTooltipDialog .alertPlugin-alertMessage::-webkit-scrollbar-thumb:hover {background-color: rgba(0, 0, 0, 0.2);}
+.dijitTooltipDialog .alertPlugin-alertMessage::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 0);}
+.dijitTooltipDialog .alertPlugin-alertMessage:hover::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 0.1);}
+.dijitTooltipDialog .alertPlugin-alertMessage:hover::-webkit-scrollbar-thumb:hover {background-color: rgba(0, 0, 0, 0.2);}
+.alertPlugin-alertLine {position: absolute; display: initial; width: 40px; text-align: right; cursor: text;}
+.alertPlugin-onTextLine {visibility: hidden;}
+.alertPlugin-hasTooltip .alertPlugin-warningImg,.alertPlugin-hasTooltip .alertPlugin-errorImg {cursor: pointer;}
+.alertPlugin-alertLine .alertPlugin-warningElement,.alertPlugin-alertLine .alertPlugin-errorElement {display: inline-block; margin-right: 4px;}
+.alertPlugin-isStale {-webkit-filter: opacity(0.4) grayscale(80%); filter: opacity(0.4) grayscale(80%);}
+.diagnosticMessage-wrapper {font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 12px;}
+.diagnosticMessage-wrapper.diagnosticMessage-warningType {color: rgb(255,100,0);}
+.diagnosticMessage-wrapper.diagnosticMessage-warningType a {color: rgb(255,100,0); text-decoration: underline;}
+.diagnosticMessage-wrapper.diagnosticMessage-errorType {color: rgb(230,0,0);}
+.diagnosticMessage-wrapper.diagnosticMessage-errorType a {color: rgb(230,0,0); text-decoration: underline;}
+.diagnosticMessage-wrapper .diagnosticMessage-messagePart {white-space: pre-wrap;}
+.diagnosticMessage-wrapper .diagnosticMessage-stackPart {white-space: pre;}
+.embeddedOutputsWarningElement{min-height: 18px; max-height: 250px; overflow: auto;}
+.embeddedOutputsWarningElement.inlineElement {}
+.embeddedOutputsErrorElement {min-height: 18px; max-height: 250px; overflow: auto;}
+.embeddedOutputsErrorElement.inlineElement {}
+.variableNameElement .headerElement {color: rgb(179, 179, 179); font-style: italic;}
+.variableNameElement .headerElement .headerDataType {color: rgb(147, 176, 230);}
+.matrixElement .horizontalEllipsis,.rtcDataTipElement .matrixElement .horizontalEllipsis {display: inline-block; margin-top: 3px; content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAJCAYAAADO1CeCAAAAJUlEQVR42mP4//8/A70xw0i29BUDFPxnAEtTW37wWDqakIa4pQDvOOG89lHX2gAAAABJRU5ErkJggg==");}
+.matrixElement .verticalEllipsis,.textElement .verticalEllipsis,.rtcDataTipElement .matrixElement .verticalEllipsis,.rtcDataTipElement .textElement .verticalEllipsis {margin-left: 35px; content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAZCAYAAAAIcL+IAAAALklEQVR42mP4//8/AzGYgWyFMECMwv8QddRS+P//KyimlmcGUOFoOI6GI/UVAgDnd8Dd4+NCwgAAAABJRU5ErkJggg==");}
+</style></head><body><div class = "content"><div class = 'SectionBlock containment active'><h1 class = "S1"><span class = "S2"><span class="S0">ME 535 Assignment 3, Fall 2018</span></span></h1><h1 class = "S3"><span class = "S2"><span class="S0">Debabrata Auddya</span></span></h1><div class = "S4"><span class = "S2"><span class="S5">Question 4.3:</span></span></div><div class = "S4"><span class = "S2"><span class="S5">c.  Read the IGES file into Matlab</span></span></div><div class = "S4"><span class = "S2"><span class="S5">Name of igs file: Fish.igs</span></span></div><div class = 'CodeBlock contiguous'><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S9">% read the igs file to matlab</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">clear;clf;</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">file_name = input(</span><span class="S10">'Pleas input the file name: '</span><span class="S0">,</span><span class="S10">'s'</span><span class="S0">);</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">fp = fopen(file_name, </span><span class="S10">'r'</span><span class="S0">);</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">s = fscanf(fp,</span><span class="S10">'%c'</span><span class="S0">,[82 inf]);s=s';</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">fclose(fp);</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0"></span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">n=size(s);</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">j=0;</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S11">for </span><span class="S0">i=1:n(1)-1</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">    temp = s(i,:);</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">    t = str2double(temp(6:8));</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">    </span><span class="S9">% If t=126 indicate this line recorded a BS_curve</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">    </span><span class="S11">if </span><span class="S0">t == 126</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">        j = j+1;</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">        </span><span class="S9">% find the bs_curve parameter segment number</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">        l = temp(13:16);</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">        </span><span class="S9">% the following find BS_curve parameter segment</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">        </span><span class="S11">for </span><span class="S0">ii = i:n(1)-1</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">            temp1 = s(ii,:);</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">            </span><span class="S9">% find BSCURVE parameter segment</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">            </span><span class="S11">if </span><span class="S0">strcmp(temp1(77:80),l) </span><span class="S0">&amp;</span><span class="S0"> str2double(temp1(1:3)) == t</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                </span><span class="S9">% parameter segment sign, in our example is '21P'</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                temp2 = temp1(70:73);</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                row1 = ii;</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                </span><span class="S11">for </span><span class="S0">i2 = ii:n(1)-1</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                    temp3 = s(i2,:);</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                    </span><span class="S9">% find all parameter lines in the same BSCURVE</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                    </span><span class="S11">if </span><span class="S0">strcmp(temp3(70:73),temp2)</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                        </span><span class="S9">% record the last BS_curve parameter line</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                        k = i2;</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                    </span><span class="S11">end</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                </span><span class="S11">end</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                </span><span class="S11">for </span><span class="S0">i3=1:k-row1+1</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                    </span><span class="S0">bs</span><span class="S0">(i3,:)=s(row1+i3-1,:);</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                </span><span class="S11">end</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                </span><span class="S9">%call bspline processing function</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                hold </span><span class="S10">on</span><span class="S0">;</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                bsp_curve(bs);</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                clear </span><span class="S10">bs</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">            </span><span class="S11">end</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">        </span><span class="S11">end</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">    </span><span class="S11">elseif </span><span class="S0">t==128 </span><span class="S9">%  BS_surface</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">        j=j+1;</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">        l = temp(13:16);</span><span class="S9">%bs_surface eparameter segment</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">        </span><span class="S9">%  find bs_surface parameter</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">        </span><span class="S11">for </span><span class="S0">ii=i:n(1)-1</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">            temp1=s(ii,:);</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">           </span><span class="S11">if </span><span class="S0">strcmp(temp1(77:80),l) </span><span class="S0">&amp;</span><span class="S0"> str2double(temp1(1:3)) == t</span><span class="S9">% find BSCURVE parameter segment</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                </span><span class="S9">% parameter segment example: 25p</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                temp2 = temp1(70:73);</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                row1=ii;</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                </span><span class="S11">for </span><span class="S0">i2=ii:n(1)-1</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                    temp3=s(i2,:);</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                    </span><span class="S9">% find all parameter lines in the same BSCURVE</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                    </span><span class="S11">if </span><span class="S0">strcmp(temp3(70:73),temp2)</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                        k=i2; </span><span class="S9">%record the last BS_cruve parameter line</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                    </span><span class="S11">end</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                </span><span class="S11">end</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                </span><span class="S11">for </span><span class="S0">i3=1:k-row1+1</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                    bs(i3,:)=s(row1+i3-1,:);</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                </span><span class="S11">end</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                </span><span class="S9">%call bs drawing function</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                hold </span><span class="S10">on</span><span class="S0">;</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                bsp_surface(bs);</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                view(-8,-42);</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">                clear </span><span class="S10">bs</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">            </span><span class="S11">end</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">        </span><span class="S11">end</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">    </span><span class="S11">end</span></span></div></div><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0">    </span></span></div></div><div class = 'inlineWrapper outputs'><div class = "S7 lineNode"><span class = "S8"><span class="S11">end</span></span></div><div class="outputParagraph" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 14px;"><div class="inlineElement eoOutputWrapper embeddedOutputsTextElement scrollableOutput" uid="0F04FE8A" data-scroll-top="null" data-scroll-left="null" data-width="1029" data-height="1977" data-testid="output_0" style="max-height: 261px; width: 1059px; white-space: pre; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="textElement" style="white-space: pre; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;">degree 3
+weights
+  Columns 1 through 23
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 24 through 42
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+control points...
+    0.0600    9.0265         0
+    2.7841    7.1406         0
+    3.0355    4.7518         0
+    3.2451    2.1115         0
+    3.2870    1.1057         0
+    3.4127    0.3094         0
+    3.9575    0.0580         0
+    4.4604   -0.6545         0
+    4.9214   -1.5346         0
+    5.3405   -2.6661         0
+    5.4662   -3.7138         0
+    5.4662   -4.5520         0
+    5.5919   -5.1387         0
+    5.0890   -4.8873         0
+    4.8795   -4.6358         0
+    4.6700   -4.1748         0
+    4.3347   -3.3785         0
+    4.2090   -3.0433         0
+    4.1670   -3.0433         0
+    3.9994   -3.1690         0
+    4.1251   -3.7557         0
+    4.2928   -4.2586         0
+    3.4546   -3.6719         0
+    3.1193   -2.6661         0
+    2.8679   -2.5404         0
+    3.0355   -3.8395         0
+    3.1193   -6.0607         0
+    2.4488   -7.5275         0
+    1.7782   -8.2819         0
+    1.0671   -9.2445         0
+    1.0671   -9.4482         0
+    1.3726  -11.1455         0
+    2.5267  -12.6730         0
+    3.5112  -13.6235         0
+    4.1561  -14.1667         0
+    4.7332  -14.6759         0
+    4.9709  -14.9474         0
+    3.3075  -14.3364         0
+    2.3570  -13.8612         0
+    1.4065  -13.3520         0
+    0.7276  -12.9107         0
+    0.0147  -12.5033         0
+
+knotvector
+  Columns 1 through 14
+
+         0         0         0         0    1.0971    2.1942    3.2913    4.3884    5.4855    6.5826    7.6797    8.7768    9.8739   10.9709
+
+  Columns 15 through 28
+
+   12.0680   13.1651   14.2622   15.3593   16.4564   17.5535   18.6506   19.7477   20.8448   21.9419   23.0390   24.1361   25.2332   26.3303
+
+  Columns 29 through 42
+
+   27.4274   28.5245   29.6216   30.7187   31.8157   32.9128   34.0099   35.1070   36.2041   37.3012   38.3983   39.4954   40.5925   41.6896
+
+  Columns 43 through 46
+
+   42.7867   42.7867   42.7867   42.7867
+
+degree 3
+weights
+  Columns 1 through 23
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 24 through 42
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+control points...
+   -0.0600    9.0265         0
+   -2.7841    7.1406         0
+   -3.0355    4.7518         0
+   -3.2451    2.1115         0
+   -3.2870    1.1057         0
+   -3.4127    0.3094         0
+   -3.9575    0.0580         0
+   -4.4604   -0.6545         0
+   -4.9214   -1.5346         0
+   -5.3405   -2.6661         0
+   -5.4662   -3.7138         0
+   -5.4662   -4.5520         0
+   -5.5919   -5.1387         0
+   -5.0890   -4.8873         0
+   -4.8795   -4.6358         0
+   -4.6700   -4.1748         0
+   -4.3347   -3.3785         0
+   -4.2090   -3.0433         0
+   -4.1670   -3.0433         0
+   -3.9994   -3.1690         0
+   -4.1251   -3.7557         0
+   -4.2928   -4.2586         0
+   -3.4546   -3.6719         0
+   -3.1193   -2.6661         0
+   -2.8679   -2.5404         0
+   -3.0355   -3.8395         0
+   -3.1193   -6.0607         0
+   -2.4488   -7.5275         0
+   -1.7782   -8.2819         0
+   -1.0671   -9.2445         0
+   -1.0671   -9.4482         0
+   -1.3726  -11.1455         0
+   -2.5267  -12.6730         0
+   -3.5112  -13.6235         0
+   -4.1561  -14.1667         0
+   -4.7332  -14.6759         0
+   -4.9709  -14.9474         0
+   -3.3075  -14.3364         0
+   -2.3570  -13.8612         0
+   -1.4065  -13.3520         0
+   -0.7276  -12.9107         0
+   -0.0147  -12.5033         0
+
+knotvector
+  Columns 1 through 14
+
+         0         0         0         0    1.0971    2.1942    3.2913    4.3884    5.4855    6.5826    7.6797    8.7768    9.8739   10.9709
+
+  Columns 15 through 28
+
+   12.0680   13.1651   14.2622   15.3593   16.4564   17.5535   18.6506   19.7477   20.8448   21.9419   23.0390   24.1361   25.2332   26.3303
+
+  Columns 29 through 42
+
+   27.4274   28.5245   29.6216   30.7187   31.8157   32.9128   34.0099   35.1070   36.2041   37.3012   38.3983   39.4954   40.5925   41.6896
+
+  Columns 43 through 46
+
+   42.7867   42.7867   42.7867   42.7867</div></div><div class="inlineElement eoOutputWrapper embeddedOutputsFigure" uid="099C38C3" data-scroll-top="null" data-scroll-left="null" data-testid="output_1" style="width: 1059px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="figureElement" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="figureContainingNode" style="width: 560px; max-width: 100%; display: inline-block; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="GraphicsView" data-dojo-attach-point="graphicsViewNode,backgroundColorNode" id="dijit__TemplatedMixin_12" widgetid="dijit__TemplatedMixin_12" style="width: 100%; height: auto; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><img class="ImageView figureImage" data-dojo-attach-point="imageViewNode" draggable="false" id="dijit__TemplatedMixin_14" widgetid="dijit__TemplatedMixin_14" src="data:image/png;base64,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" style="width: 100%; height: auto; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div></div></div></div></div></div></div><div class = "S13"><span class = "S2"><span class="S0">d. Demonstrate the geometric effect of changing control points: </span></span></div><div class = 'CodeBlock contiguous'><div class = 'inlineWrapper'><div class = "S7 lineNode"><span class = "S8"><span class="S0"></span></span></div></div></div></div></div>
+<!-- 
+##### SOURCE BEGIN #####
+%% ME 535 Assignment 3, Fall 2018
+%% Debabrata Auddya
+% *Question 4.3:*
+% 
+% *c.  Read the IGES file into Matlab*
+% 
+% *Name of igs file: Fish.igs*
+
+% read the igs file to matlab
+clear;clf;
+file_name = input('Pleas input the file name: ','s');
+fp = fopen(file_name, 'r');
+s = fscanf(fp,'%c',[82 inf]);s=s';
+fclose(fp);
+
+n=size(s);
+j=0;
+for i=1:n(1)-1
+    temp = s(i,:);
+    t = str2double(temp(6:8));
+    % If t=126 indicate this line recorded a BS_curve
+    if t == 126
+        j = j+1;
+        % find the bs_curve parameter segment number
+        l = temp(13:16);
+        % the following find BS_curve parameter segment
+        for ii = i:n(1)-1
+            temp1 = s(ii,:);
+            % find BSCURVE parameter segment
+            if strcmp(temp1(77:80),l) & str2double(temp1(1:3)) == t
+                % parameter segment sign, in our example is '21P'
+                temp2 = temp1(70:73);
+                row1 = ii;
+                for i2 = ii:n(1)-1
+                    temp3 = s(i2,:);
+                    % find all parameter lines in the same BSCURVE
+                    if strcmp(temp3(70:73),temp2)
+                        % record the last BS_curve parameter line
+                        k = i2;
+                    end
+                end
+                for i3=1:k-row1+1
+                    bs(i3,:)=s(row1+i3-1,:);
+                end
+                %call bspline processing function
+                hold on;
+                bsp_curve(bs);
+                clear bs
+            end
+        end
+    elseif t==128 %  BS_surface
+        j=j+1;
+        l = temp(13:16);%bs_surface eparameter segment
+        %  find bs_surface parameter
+        for ii=i:n(1)-1
+            temp1=s(ii,:);
+           if strcmp(temp1(77:80),l) & str2double(temp1(1:3)) == t% find BSCURVE parameter segment
+                % parameter segment example: 25p
+                temp2 = temp1(70:73);
+                row1=ii;
+                for i2=ii:n(1)-1
+                    temp3=s(i2,:);
+                    % find all parameter lines in the same BSCURVE
+                    if strcmp(temp3(70:73),temp2)
+                        k=i2; %record the last BS_cruve parameter line
+                    end
+                end
+                for i3=1:k-row1+1
+                    bs(i3,:)=s(row1+i3-1,:);
+                end
+                %call bs drawing function
+                hold on;
+                bsp_surface(bs);
+                view(-8,-42);
+                clear bs
+            end
+        end
+    end
+    
+end
+%% 
+% d. Demonstrate the geometric effect of changing control points:
+##### SOURCE END #####
+--></body></html>
