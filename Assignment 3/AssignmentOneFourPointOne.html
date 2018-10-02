@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="generator" content="MATLAB R2017b"><meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,chrome=1"><title>Untitled</title><style type="text/css">
+* {margin: 0; padding: 0;}
+body {text-align: start; line-height: 17.234001159668px; min-height: 0px; white-space: normal; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-style: normal; font-size: 14px; font-weight: normal; text-decoration: none; white-space: normal; }
+h1, h2 {font-weight: normal;}
+.content { padding: 30px; }
+
+.S0 { margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S1 { text-align: left; line-height: 21px; min-height: 17px; white-space: pre-wrap; font-family: Helvetica, Arial, sans-serif; white-space: pre-wrap; margin-left: 4px; margin-top: 2px; margin-bottom: 9px; margin-right: 10px;  }
+.S2 { min-height: 0px; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S3 { font-weight: bold; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S4 { margin-left: 3px; margin-top: 10px; margin-bottom: 4px; margin-right: 3px;  }
+.S5 { min-height: 18px; white-space: nowrap; white-space: nowrap; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S6 { min-height: 0px; white-space: pre; white-space: pre; margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 45px;  }
+.S7 { color: rgb(160, 32, 240); margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S8 { color: rgb(34, 139, 34); margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S9 { color: rgb(0, 0, 255); margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+.S10 { color: rgb(64, 64, 64); margin-left: 0px; margin-top: 0px; margin-bottom: 0px; margin-right: 0px;  }
+
+.CodeBlock {margin: 10px 0 10px 0; background-color: #F7F7F7;}
+.CodeBlock+.paragraphNode {margin-top: 10px;}
+.lineNode {padding-left: 10px; border-left: 1px solid #E9E9E9; border-right: 1px solid #E9E9E9;}
+.inlineWrapper:first-child .lineNode,.inlineWrapper.outputs+.inlineWrapper .lineNode {padding-top: 5px; border-top: 1px solid #E9E9E9;}
+.inlineWrapper:last-child .lineNode,.inlineWrapper.outputs .lineNode {padding-bottom: 5px; border-bottom: 1px solid #E9E9E9;}
+.lineNode .textBox {white-space: pre;}
+.outputGroup {margin: 2px 0 2px 0; padding: 2px 2px 2px 4px;}
+.outputRegion {}
+.outputParagraph {color: rgba(64, 64, 64, 1); padding: 10px 0 6px 17px; background: white; overflow-x: hidden;}
+.inlineWrapper:last-child .outputParagraph {border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;}
+.outputParagraph:empty {margin: 0;}
+.inlineElement .symbolicElement {margin-top: 1px; margin-bottom: 1px;}
+.embeddedOutputsSymbolicElement .MathEquation {margin-top: 4px; margin-bottom: 4px;}
+.embeddedOutputsSymbolicElement .MathEquation.displaySymbolicElement {margin-left: 15px;}
+.embeddedOutputsSymbolicElement .MathEquation.inlineSymbolicElement {}
+.embeddedOutputsSymbolicElement {overflow-x: auto; overflow-y: auto;}
+.embeddedOutputsSymbolicElement { overflow: initial !important;}
+.embeddedOutputsTextElement,.embeddedOutputsVariableStringElement {white-space: pre; word-wrap: initial; min-height: 18px; max-height: 250px; overflow: auto;}
+.textElement,.rtcDataTipElement .textElement {padding-top: 3px;}
+.embeddedOutputsTextElement.inlineElement,.embeddedOutputsVariableStringElement.inlineElement {}
+.inlineElement .textElement {}
+.embeddedOutputsTextElement,.embeddedOutputsVariableStringElement { max-height: none !important; overflow: initial !important;}
+.veSpecifier {}
+.veContainer {}
+.veSpecifierBox {height: 400px; width: 500px;}
+.veSpecifier .veTable {padding-top: 3px; padding-bottom: 4px;}
+.veSpecifierBox .veSpecifier .veContainer {position: relative; width: 100%; height: 370px;}
+.veSpecifierBox .dijitDialogPaneContent {width: 97% !important; height: 88% !important;}
+.veSpecifier .veTable .rowHeadersWrapper {padding-bottom: 0;}
+.veSpecifier .veTable .scroller .variableEditorRenderers {padding-right: 3px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;}
+.veSpecifier .veTable .topHeaderWrapper,.veSpecifier .veTable .bottomRowHeaderWrapper {visibility: hidden; z-index: 0;}
+.veMetaSummary {font-style: italic;}
+.veSpecifier .veTable .scroller {overflow: hidden;}
+.veSpecifier .veTable:hover .scroller {overflow: auto;}
+.veSpecifier .veVariableName,.veSpecifier .veDimensionFont {font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 12px;}
+.veSpecifier .veVariableName {padding-top: 2px;}
+.veSpecifier .veDimensionFont {font-style: italic; color: #9A9A9A;}
+.veSpecifier .scroller::-webkit-scrollbar-track {background-color: white;}
+.veSpecifier .scroller::-webkit-scrollbar-corner {background-color: white;}
+.veSpecifier .veTable .topRowHeaderWrapper {border: none; background-color: #F8F9FA;}
+.veSpecifier .mw_type_ListBase.showCellBorders,.veSpecifier .veTable .topHeaderWrapper,.veSpecifier .veTable .bottomRowHeaderWrapper,.veSpecifier .veTable .verticalScrollSpacer,.veSpecifier .veTable .horizontalScrollSpacer {border: none;}
+.veSpecifier .veTable .dataScrollerNode {border: 1px solid #BFBFBF;}
+.veSpecifier .veTable .columnHeaderNode,.veSpecifier .veTable .rowHeaderNode,.veSpecifier .veTable .dataBody {font-family: Arial; font-size: 13px;}
+.veSpecifier .veTable .columnHeaderNode,.veSpecifier .veTable .rowHeaderNode {color: #7F7F7F;}
+.veSpecifier .veTable .dataBody {color: #000000;}
+.veSpecifier .veTable .columnHeaderNode .cell .drag,.veSpecifier .veTable .columnHeaderNode .cell .header,.veSpecifier .veTable .topHeaderWrapper,.veSpecifier .veTable .bottomRowHeaderWrapper {background-color: #F8F9FA;}
+.veSpecifier .veTable .columnHeaderNode .cell .dragBorder {border-right: 1px solid #F8F9FA;}
+.veSpecifier .veTable .rowHeaderNode .cell {padding-top: 3px; text-align: center; border-bottom: 1px solid #F8F9FA;}
+.veSpecifier .veTable .dataBody .cell .plainText {text-align: right;}
+.veSpecifier .veTable .dataBody .row .cell {border-bottom: 1px solid #E9E9E9; border-right: 1px solid #E9E9E9;}
+.embeddedOutputsVariableElement {white-space: pre-wrap; word-wrap: break-word; min-height: 18px; max-height: 250px; overflow: auto;}
+.variableElement {}
+.embeddedOutputsVariableElement.inlineElement {}
+.inlineElement .variableElement {}
+.variableNameElement {margin-bottom: 3px; display: inline-block;}
+.variableValue { width: 100% !important; }
+.embeddedOutputsMatrixElement {min-height: 18px; box-sizing: border-box;}
+.embeddedOutputsMatrixElement .matrixElement,.rtcDataTipElement .matrixElement {position: relative;}
+.matrixElement .variableValue,.rtcDataTipElement .matrixElement .variableValue {white-space: pre; display: inline-block; vertical-align: top; overflow: hidden;}
+.embeddedOutputsMatrixElement.inlineElement {}
+.embeddedOutputsMatrixElement.inlineElement .topHeaderWrapper {display: none;}
+.embeddedOutputsMatrixElement.inlineElement .veTable .body {padding-top: 0 !important; max-height: 100px;}
+.inlineElement .matrixElement {max-height: 300px;}
+.embeddedOutputsMatrixElement .matrixElement .valueContainer,.rtcDataTipElement .matrixElement .valueContainer {white-space: nowrap; margin-bottom: 3px;}
+.embeddedOutputsMatrixElement .matrixElement .valueContainer .horizontalEllipsis.hide,.embeddedOutputsMatrixElement .matrixElement .verticalEllipsis.hide,.rtcDataTipElement .matrixElement .valueContainer .horizontalEllipsis.hide,.rtcDataTipElement .matrixElement .verticalEllipsis.hide {display: none;}
+.embeddedOutputsMatrixElement .matrixElement .valueContainer .horizontalEllipsis {margin-bottom: -3px;}
+.matrixElement { max-height: none !important; }
+.embeddedOutputsVariableTableElement .ClientViewDiv table tr {height: 22px; white-space: nowrap;}
+.embeddedOutputsVariableTableElement .ClientViewDiv table thead tr th {border-width: 1px 0px 1px 1px;}
+.embeddedOutputsVariableTableElement .ClientViewDiv table {border-spacing: 0px; border: 1px solid #bfbfbf; border-width: 0px 1px 0px 0px;}
+.embeddedOutputsVariableTableElement .ClientViewDiv table tr td,.embeddedOutputsVariableTableElement .ClientViewDiv table tr th {min-width : 75px; max-width : 75px; background-color:white; border: 1px solid #bfbfbf; text-overflow: ellipsis; border-width: 0px 0px 1px 1px; font-family: 'Arial', sans-serif; font-size: 12px; overflow : hidden;}
+.embeddedOutputsVariableTableElement .ClientViewDiv table tbody tr th {width: 34px; max-width: 100px;}
+.embeddedOutputsVariableTableElement .ClientViewDiv table tr span {text-overflow: ellipsis; padding: 3px;}
+.embeddedOutputsVariableTableElement .ClientViewDiv table tr th {background: #f5f5f5; color: rgba(0,0,0,0.5); padding: 3px; font-size: 9px;}
+.embeddedOutputsVariableTableElement .ClientViewDiv table tr th:first-child {min-width: 28px; max-width: 250px;}
+.dijitTooltipDialog .dijitTooltipContainer .dijitTooltipContents .alertPlugin-alertMessage {min-width: 12px; max-width: 400px; max-height: 300px; overflow: auto;}
+.dijitTooltipDialog .alertPlugin-alertMessage::-webkit-scrollbar {width: 11px; height: 11px;}
+.dijitTooltipDialog .alertPlugin-alertMessage::-webkit-scrollbar-track {background-color: rgba(0, 0, 0, 0);}
+.dijitTooltipDialog .alertPlugin-alertMessage::-webkit-scrollbar-corner {background-color: rgba(0, 0, 0, 0);}
+.dijitTooltipDialog .alertPlugin-alertMessage::-webkit-scrollbar-thumb {border-radius: 7px; background-color: rgba(0, 0, 0, 0.1); border: 2px solid rgba(0, 0, 0, 0); background-clip: padding-box;}
+.dijitTooltipDialog .alertPlugin-alertMessage::-webkit-scrollbar-thumb:hover {background-color: rgba(0, 0, 0, 0.2);}
+.dijitTooltipDialog .alertPlugin-alertMessage::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 0);}
+.dijitTooltipDialog .alertPlugin-alertMessage:hover::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 0.1);}
+.dijitTooltipDialog .alertPlugin-alertMessage:hover::-webkit-scrollbar-thumb:hover {background-color: rgba(0, 0, 0, 0.2);}
+.alertPlugin-alertLine {position: absolute; display: initial; width: 40px; text-align: right; cursor: text;}
+.alertPlugin-onTextLine {visibility: hidden;}
+.alertPlugin-hasTooltip .alertPlugin-warningImg,.alertPlugin-hasTooltip .alertPlugin-errorImg {cursor: pointer;}
+.alertPlugin-alertLine .alertPlugin-warningElement,.alertPlugin-alertLine .alertPlugin-errorElement {display: inline-block; margin-right: 4px;}
+.alertPlugin-isStale {-webkit-filter: opacity(0.4) grayscale(80%); filter: opacity(0.4) grayscale(80%);}
+.diagnosticMessage-wrapper {font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 12px;}
+.diagnosticMessage-wrapper.diagnosticMessage-warningType {color: rgb(255,100,0);}
+.diagnosticMessage-wrapper.diagnosticMessage-warningType a {color: rgb(255,100,0); text-decoration: underline;}
+.diagnosticMessage-wrapper.diagnosticMessage-errorType {color: rgb(230,0,0);}
+.diagnosticMessage-wrapper.diagnosticMessage-errorType a {color: rgb(230,0,0); text-decoration: underline;}
+.diagnosticMessage-wrapper .diagnosticMessage-messagePart {white-space: pre-wrap;}
+.diagnosticMessage-wrapper .diagnosticMessage-stackPart {white-space: pre;}
+.embeddedOutputsWarningElement{min-height: 18px; max-height: 250px; overflow: auto;}
+.embeddedOutputsWarningElement.inlineElement {}
+.embeddedOutputsErrorElement {min-height: 18px; max-height: 250px; overflow: auto;}
+.embeddedOutputsErrorElement.inlineElement {}
+.variableNameElement .headerElement {color: rgb(179, 179, 179); font-style: italic;}
+.variableNameElement .headerElement .headerDataType {color: rgb(147, 176, 230);}
+.matrixElement .horizontalEllipsis,.rtcDataTipElement .matrixElement .horizontalEllipsis {display: inline-block; margin-top: 3px; content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAJCAYAAADO1CeCAAAAJUlEQVR42mP4//8/A70xw0i29BUDFPxnAEtTW37wWDqakIa4pQDvOOG89lHX2gAAAABJRU5ErkJggg==");}
+.matrixElement .verticalEllipsis,.textElement .verticalEllipsis,.rtcDataTipElement .matrixElement .verticalEllipsis,.rtcDataTipElement .textElement .verticalEllipsis {margin-left: 35px; content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAZCAYAAAAIcL+IAAAALklEQVR42mP4//8/AzGYgWyFMECMwv8QddRS+P//KyimlmcGUOFoOI6GI/UVAgDnd8Dd4+NCwgAAAABJRU5ErkJggg==");}
+</style></head><body><div class = "content"><div class = 'SectionBlock containment active'><div class = "S1"><span class = "S2"><span class="S3">Question 4.1: c</span></span></div><div class = "S1"><span class = "S2"><span class="S3">Plot the basis functions with a computer program. </span></span></div><div class = 'CodeBlock contiguous'><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0"></span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0"></span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0">clear </span><span class="S7">all</span><span class="S0">;close </span><span class="S7">all</span><span class="S0">;</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0"></span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S8">%define order</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0">order = 3;</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S8">%define knot vector</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S8">%knots = [0 0 0 0 0.5 1 1 1 1];</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S8">%knots = [-2 -1 0 1 2 3 4 5 6]</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S8">%knots = [ 0 0 0 1 1 1];</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S8">% knots=[0 0 0 1 2 3 4 4 4];</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0">knots = [0, 1, 2, 3, 3, 4, 5, 6];</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S8">%knots = [1 2 3 4 5 6 7 8 9 10 11 12];</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S8">%knots = [-10 -8 -6 -4 -2 0 2 4 6];</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0"></span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0">figure(1);</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0"></span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0">hold </span><span class="S7">on</span><span class="S0">;</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0"></span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S8">% Plot all basis functions</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S9">for </span><span class="S0">span=order-2: length(knots)-order</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0">    u=linspace(knots(span+1),knots(span+2),20);</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0">    f = zeros(order,length(u));</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0"></span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0">    </span><span class="S9">for </span><span class="S0">i=1:length(u)</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0">        f(:,i)=Basisfuns(u(i), knots, span, order);</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0">    </span><span class="S9">end</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0"></span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S8">%     figure;</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S8">%     xlim([0 6])</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S8">%     ylim([0 1])</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0"></span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0">    plot(u,f,</span><span class="S7">'b-'</span><span class="S0">,  </span><span class="S7">'linewidth'</span><span class="S0">,2);</span><span class="S8">% , 'MarkerFaceColor', 'w', 'MarkerSize',4);</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S8">%     xlim([0 6])</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S8">%     ylim([-0.1 1.1])</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0"></span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0">    grid </span><span class="S7">on</span><span class="S0">;</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0">    axis </span><span class="S7">equal</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0">    </span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S9">end</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0">xlim([0 6])</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0">ylim([0 1])</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0"></span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0">u=linspace(knots(1),knots(2),20);</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0">y= (u.^2)/2;</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0">plot(u,y,</span><span class="S7">'b-'</span><span class="S0">,</span><span class="S7">'linewidth'</span><span class="S0">,2);</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0">u=linspace(knots(7),knots(8),20);</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0">y=  0.5* ((6-u).^2);</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0">plot(u,y,</span><span class="S7">'b-'</span><span class="S0">,</span><span class="S7">'linewidth'</span><span class="S0">,2);</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S8">% set(gca,'FontSize',20)    </span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S8">% xlabel('x','FontSize',20);</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S8">% ylabel('y','FontSize',20);</span></span></div></div><div class = 'inlineWrapper'><div class = "S5 lineNode"><span class = "S6"><span class="S0"></span></span></div></div><div class = 'inlineWrapper outputs'><div class = "S5 lineNode"><span class = "S6"><span class="S0">title(</span><span class="S7">"Basis functions of BSplines"</span><span class="S0">)</span></span></div><div class="outputParagraph" style="white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 14px;"><div class="inlineElement eoOutputWrapper embeddedOutputsFigure" uid="E620CB66" data-scroll-top="null" data-scroll-left="null" data-testid="output_0" style="width: 1059px; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="figureElement" style="cursor: default; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="figureContainingNode" style="width: 560px; max-width: 100%; display: inline-block; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><div class="GraphicsView" data-dojo-attach-point="graphicsViewNode,backgroundColorNode" id="dijit__TemplatedMixin_6" widgetid="dijit__TemplatedMixin_6" style="width: 100%; height: auto; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"><img class="ImageView figureImage" data-dojo-attach-point="imageViewNode" draggable="false" id="dijit__TemplatedMixin_8" widgetid="dijit__TemplatedMixin_8" src="data:image/png;base64,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4zhOcXFx0PL4yhBsvb/55hvn6quvbjVN3759nXfffbfNZYylHqMpR7i6DqUt+9aZZ57pSHJGjx7d6tZboMB6uPnmm1vVc11dXdD3RvtauLo9cOBA0G184YUXOp999lnc2wBINnpgkLbuu+8+LVq0SFVVVaqtrVVWVpbuv/9+//979OihOXPmaOTIkerQoYMqKir04IMPqry8XPPmzdNTTz2l3bt364knnpAk3XbbbRo1apROnDih1atX6/TTTw+63FimkaRLL71U+/bt8/cMXH755erZs6fy8/NjWv9vvvlGy5cv10033aT169dr586deuutt7R69WqNHTtWN9xwg1577TX/sqdMmaJdu3aptLRUklRUVKQvv/zS38szefJkZWdna9iwYSGXef311+utt96SJE2fPl19+vTRn//8Z3322We67rrr9Mknn6hHjx5RlTE/Pz+meoymHCUlJXHVdaR9q7i4WM8//7w2bdqkzp07q6ioSBdeeKF+8pOfBO1Z+eabb7R+/XqVlJSovLxc7777rlavXq0HH3xQ9957b1RlCjbPcNt/2rRpev3113X66afr97//vXr06KF77rlHH330kSZMmKCKioqY92UgJdxOUEAihepVkeQMGTLEKS0tbfb+xsZGZ+vWrc7KlSud119/3Rk9erQjyendu7fjOI6zadMm//SLFy92ampqWi2z5VVwNNOEsmzZslZX+Y7j+HtgiouL/a9F6oGR5Gzbts1xHMfZsGGD/7UFCxY4n3zySdCrcsdxml31L1y40P++I0eOhF3vwHneeOON/ve98MIL/tcfeuihqMsYaz1GW45QdR1KW/atmpoap7CwMOh7L774YufAgQOt6iGw1yM/P9+R5PTp0ydkfUd6Ldrt/8ADD/inXb58uf/10tLSuPZlINm4gYm09dBDD2nVqlV67bXXNGjQIFVWVqq4uFhfffWVJOnJJ5/UWWedpeHDh2vChAkqLi72X5H7BmuOHDlSQ4YMkXRqoGfv3r3VqVMnjR8/XmvXrg263FimSYa8vDydf/75kqThw4f7X9+xY4e2b9/u/3vatGnNpjvttNNiWl7gPMePH+///brrrvP/XlFREXUZY63HWMrRVpH2rV69emnz5s1at26d5s+fr+LiYv/A3/fff1+PPfZYs/l16dJF55xzjv9v3zin6upqNTU1xVTGaLf/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krZv397s9RMnTignJyfkdIED0kL9ZLJMr59o1j8T68UnnvqhrqgfifWPJFPrJ+MCTO/evVVTU+N/bf/+/aqtrdXAgQNdLBkAAGiLjAowkjRx4kQ9/fTTqqurkyQ9+eSTKigo0IABAyJMCQAAvCKjxsBI0owZM1RZWamRI0cqLy9PnTt31pIlS9wuFgAAaIOMe4waAADYl3G3kAAAgH0EGAAAYE7GjYFpC7e/9NHLmpqa9OGHH6q6ulqNjY2aPHmy20XynJ07d2rVqlXas2ePcnNzdd111+miiy5yu1iesWXLFpWWlmrfvn3KysrS5Zdfnrbf2RKvDz/8ULt379Zll12mbt26uV0cz9i8ebP27t3b7LURI0aof//+rpTHixobG/XSSy+pvLxcp512mq644gr9+Mc/drtYCUEPTAhufOmjJfPmzdOvfvUrPf/887r33nvdLo4nTZ06VXv27NGoUaOUnZ2tadOmacWKFW4XyzNKS0t18OBBjRo1St27d9d9992nP/zhD24Xy3P279+vO+64Q3fffbc+/fRTt4vjKa+88oqeeuopvf/++/6fAwcOuF0sz6ivr9f111+v5cuX64ILLlC/fv306quvul2shGEQbwjTp09Xfn6+7rrrLknSmjVrVFJSorKysoR86aN19fX1ys7O1po1azRr1ixVVFS4XSTPOXz4sDp37uz/e8GCBXr11Ve1atUqF0vlXa+99pruuusubdu2ze2ieMr06dN1zTXX6He/+52ee+45jRgxwu0iecY999wjSbr//vtdLok3LVq0SKtXr9Y//vEPtW+ffv0V6bdGCbJ+/XqNGTPG/3dRUZHq6uq0YcMGF0vlHb5PNUZogeFFOvUVFg0NDS6VxvuOHz/e6ms+Mp3varm4uNjlknhXXV2d1q5dS/ANYvny5Zo2bZr279+vtWvX6uDBg24XKaEYAxOEG1/6iPRWX1+vZcuWadKkSW4XxVM+/vhjvfTSSzpy5Ig+//xzPfbYY24XyTO+/fZb/elPf9Lf//53t4viaatWrdIXX3yhiooK9ejRQ0uWLOGDSXVq7Et1dbX+/e9/6/HHH1d+fr4++OADzZkzR7fccovbxUsIemCCSOaXPiIz3XbbberatatmzpzpdlE8pUuXLvrhD3+obt266auvvtLHH3/sdpE8Y/78+frlL3+pHj16uF0UzyopKdGWLVv0/PPPq6ysTIMHD9bs2bPdLpYnNDU1SZL27dunt99+W88884yWLl2qhx9+WP/9739dLl1i0AMTROCXPgbeb470pY9AMLfffru+/vpr/fWvf2X8VAvnnHOOzjnnHEnStddeqylTpuiaa67J+Cdt3nvvPW3evFmTJk3SmjVr/Lcey8vLdR3sG0EAAAWVSURBVOaZZ2rQoEEul9AbAveT7OxszZw5U5MmTVJtbW3GH6uzsrLUvn17/exnP/Of00aMGKHOnTtr27ZtOvfcc10uYfwIMEHwpY9IlDvvvFO7du3SsmXLlJub63ZxPM13Ut69e3fGB5isrCwNHTpUzz33nKTveoXffvtt5ebmEmBCOHnypCSpQwdObe3bt9fAgQNb3TXw9cykA7ZyCL4vfbz66qvVsWNHvvSxhaamJjU2NvqvDOvr6yUxuDfQPffco61bt2rZsmXKycmhjlrYsGGDfvSjH0k6db/+4YcfVteuXTVy5EiXS+a+ESNGNOv9ra+v17Bhw3T77bfzFFKAwH3o4MGDWrBggYYPH04b+5+JEyfqpZde0pQpU5Sbm6v//Oc/On78uAoKCtwuWkIQYELgSx/DW7lypW699Vb/38OGDZMkVVRUcPD4n5dfflmSdOmll/pfy87O5pHz/7n33nu1b98+5eTk6Pjx4+rfv78WL16clo97IjnuuOMOHTp0SDk5OTp69KguuugiLVy40O1iecbNN9+sqqoqjR49WmeddZaOHj2qRx55xH/b1jo+ByaCw4cP69ChQ2mzwQEvqa+vV1VVlQYOHKiOHTu6XRwYVF9fr4qKCg0bNoyLpxDq6+u1d+9enXvuuWl1gUCAAQAA5qRPFAMAABmDAAMAAMwhwAAAAHMIMAAAwBwCDAAAMIcAAwAAzCHAAAAAcwgwAADAHAIMAAAwhwADAADMIcAAAABzCDAAAMAcAgwAADCHAAMAAMwhwAAAAHMIMAAAwBwCDAAAMIcAAwAAzCHAAAAAcwgwAADAHAIMAAAwhwADAADMIcAAAABzCDAAAMAcAgwAADCHAAMAAMwhwAAAAHMIMAAAwBwCDAAAMIcAAwAAzCHAAAAAcwgwAADAHAIMAAAwhwADAADMIcAAAABzCDAAAMAcAgwAADCHAAMAAMwhwAAAAHMIMAAAwBwCDAAAMIcAAwAAzCHAAAAAcwgwAADAHAIMAAAwhwADAADMIcAAAABzCDAAAMAcAgwAADCHAAMAAMwhwAAAAHMIMAAAwBwCDAAAMIcAAwAAzCHAAAAAcwgwAADAHAIMAAAwhwADAADMIcAAAABzCDAAAMAcAgwAADCHAAMAAMwhwAAAAHMIMAAAwBwCDAAAMIcAAwAAzCHAAAAAcwgwAADAHAIMAAAwhwADAADMIcAAAABzCDAAAMAcAgwAADCHAAMAAMwhwAAAAHMIMAAAwBwCDAAAMIcAAwAAzCHAAAAAcwgwAADAHAIMAAAwhwADAADMIcAAAABzCDAAAMAcAgwAADCHAAMAAMwhwAAAAHMIMAAAwBwCDAAAMIcAAwAAzCHAAAAAcwgwAADAHAIMAAAwhwADAADMIcAAAABzCDAAAMAcAgwAADCHAAMAAMwhwAAAAHMIMAAAwBwCDAAAMIcAAwAAzCHAAAAAcwgwAADAHAIMAAAwhwADAADMIcAAAABzCDAAAMAcAgwAADCHAAMAAMwhwAAAAHMIMAAAwBwCDAAAMIcAAwAAzCHAAAAAcwgwAADAHAIMAAAwhwADAADMIcAAAABzCDAAAMAcAgwAADCHAAMAAMwhwAAAAHMIMAAAwBwCDAAAMIcAAwAAzCHAAAAAcwgwAADAHAIMAAAwhwADAADMIcAAAABzCDAAAMAcAgwAADCHAAMAAMwhwAAAAHMIMAAAwBwCDAAAMIcAAwAAzCHAAAAAcwgwAADAHAIMAAAwhwADAADMIcAAAABzCDAAAMAcAgwAADCHAAMAAMwhwAAAAHMIMAAAwBwCDAAAMIcAAwAAzCHAAAAAcwgwAADAHAIMAAAwhwADAADMIcAAAABzCDAAAMAcAgwAADCHAAMAAMwhwAAAAHMIMAAAwBwCDAAAMOf/Ac0pfETX2KdKAAAAAElFTkSuQmCC" style="width: 100%; height: auto; white-space: normal; font-style: normal; color: rgb(64, 64, 64); font-size: 12px;"></div></div></div></div></div></div></div></div></div>
+<!-- 
+##### SOURCE BEGIN #####
+%% 
+% *Question 4.1: c*
+% 
+% *Plot the basis functions with a computer program. *
+
+
+
+clear all;close all;
+
+%define order
+order = 3;
+%define knot vector
+%knots = [0 0 0 0 0.5 1 1 1 1];
+%knots = [-2 -1 0 1 2 3 4 5 6]
+%knots = [ 0 0 0 1 1 1];
+% knots=[0 0 0 1 2 3 4 4 4];
+knots = [0, 1, 2, 3, 3, 4, 5, 6];
+%knots = [1 2 3 4 5 6 7 8 9 10 11 12];
+%knots = [-10 -8 -6 -4 -2 0 2 4 6];
+
+figure(1);
+
+hold on;
+
+% Plot all basis functions
+for span=order-2: length(knots)-order
+    u=linspace(knots(span+1),knots(span+2),20);
+    f = zeros(order,length(u));
+
+    for i=1:length(u)
+        f(:,i)=Basisfuns(u(i), knots, span, order);
+    end
+
+%     figure;
+%     xlim([0 6])
+%     ylim([0 1])
+
+    plot(u,f,'b-',  'linewidth',2);% , 'MarkerFaceColor', 'w', 'MarkerSize',4);
+%     xlim([0 6])
+%     ylim([-0.1 1.1])
+
+    grid on;
+    axis equal
+    
+end
+xlim([0 6])
+ylim([0 1])
+
+u=linspace(knots(1),knots(2),20);
+y= (u.^2)/2;
+plot(u,y,'b-','linewidth',2);
+u=linspace(knots(7),knots(8),20);
+y=  0.5* ((6-u).^2);
+plot(u,y,'b-','linewidth',2);
+% set(gca,'FontSize',20)    
+% xlabel('x','FontSize',20);
+% ylabel('y','FontSize',20);
+
+title("Basis functions of BSplines")
+##### SOURCE END #####
+--></body></html>
